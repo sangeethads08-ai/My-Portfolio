@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sangeetha S — AI Developer</title>
+<meta name="description" content="Sangeetha S, AI Developer. Computer vision, NLP and deep learning systems built with Python, PyTorch and FastAPI.">
+<meta property="og:title" content="Sangeetha S — AI Developer">
+<meta property="og:description" content="Computer vision, NLP and deep learning projects built with Python, PyTorch and FastAPI.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/htm@3.1.1/dist/htm.umd.js"></script>
+<style>
+:root{--bg:#07090f;--bg2:#0d111b;--card:#0f1522;--bd:#1d2740;--tx:#eaf0fb;--mu:#8e9bb5;--ac:#6d8bff;--ac2:#2dd4bf;--ac3:#c084fc;--tag:#16203a;--glow:rgba(109,139,255,.18);color-scheme:dark}
+:root[data-theme="light"]{--bg:#f6f7fb;--bg2:#eceff7;--card:#fff;--bd:#dfe4ef;--tx:#0f172a;--mu:#55627d;--ac:#3b5bdb;--ac2:#0f9488;--ac3:#8b3fd9;--tag:#e9eefd;--glow:rgba(59,91,219,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--bg);color:var(--tx);font-family:Inter,system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(600px 400px at 85% -5%,var(--glow),transparent),radial-gradient(500px 360px at -5% 30%,rgba(45,212,191,.08),transparent),linear-gradient(var(--bd) 1px,transparent 1px) 0 0/48px 48px,linear-gradient(90deg,var(--bd) 1px,transparent 1px) 0 0/48px 48px;opacity:.55;-webkit-mask-image:linear-gradient(#000 40%,transparent);mask-image:linear-gradient(#000 40%,transparent)}
+a{color:inherit;text-decoration:none}
+.w{max-width:1080px;margin:0 auto;padding:0 22px}
+.mono{font-family:"JetBrains Mono",monospace}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 80%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--bd)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font:700 18px "Space Grotesk",sans-serif}.logo b{color:var(--ac2)}
+.links{display:flex;gap:22px;align-items:center;font-size:14px;color:var(--mu)}
+.links a:hover{color:var(--tx)}
+.tg{background:var(--card);border:1px solid var(--bd);color:var(--tx);border-radius:999px;padding:6px 14px;cursor:pointer;font:500 13px Inter,sans-serif}
+.tg:hover{border-color:var(--ac)}
+@media(max-width:760px){.links a{display:none}}
+.hero{padding:88px 0 64px}
+.hero .w{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+@media(max-width:900px){.hero .w{grid-template-columns:1fr}}
+.badge{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--bd);background:var(--card);border-radius:999px;padding:5px 14px;font-size:13px;color:var(--mu)}
+.badge i{width:8px;height:8px;border-radius:50%;background:var(--ac2);box-shadow:0 0 10px var(--ac2)}
+h1{font:700 clamp(38px,6vw,62px)/1.07 "Space Grotesk",sans-serif;letter-spacing:-1.5px;margin:18px 0}
+h1 span{background:linear-gradient(90deg,var(--ac),var(--ac3) 55%,var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--mu);font-size:18px;max-width:560px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{padding:12px 22px;border-radius:12px;font-weight:600;font-size:15px;border:1px solid var(--bd);background:var(--card);transition:.2s}
+.btn:hover{border-color:var(--ac);transform:translateY(-2px)}
+.btn.p{background:linear-gradient(135deg,var(--ac),var(--ac3));border:0;color:#fff;box-shadow:0 8px 28px -8px var(--ac)}
+.code{background:var(--card);border:1px solid var(--bd);border-radius:16px;overflow:hidden;box-shadow:0 24px 60px -30px #000}
+.code .bar{display:flex;gap:6px;padding:12px 14px;border-bottom:1px solid var(--bd);align-items:center}
+.code .bar i{width:11px;height:11px;border-radius:50%;background:#ff5f57}.code .bar i:nth-child(2){background:#febc2e}.code .bar i:nth-child(3){background:#28c840}
+.code .bar span{margin-left:10px;font-size:12px;color:var(--mu)}
+.code pre{padding:18px;font:400 13px/1.8 "JetBrains Mono",monospace;overflow-x:auto;color:var(--tx)}
+.k{color:var(--ac3)}.s{color:var(--ac2)}.c{color:var(--mu)}.f{color:var(--ac)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-top:56px}
+.st{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:18px}
+.st b{display:block;font:700 28px "Space Grotesk",sans-serif;color:var(--ac)}.st small{color:var(--mu);font-size:13px}
+section{padding:72px 0}
+.eyebrow{font:500 13px "JetBrains Mono",monospace;color:var(--ac2);margin-bottom:6px}
+h2{font:700 clamp(28px,4vw,38px) "Space Grotesk",sans-serif;letter-spacing:-.8px;margin-bottom:8px}
+.sub{color:var(--mu);margin-bottom:30px;max-width:620px}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr))}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:24px;position:relative;transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:var(--ac);box-shadow:0 18px 40px -24px var(--ac)}
+.num{position:absolute;right:20px;top:14px;font:700 40px "Space Grotesk",sans-serif;color:var(--bd)}
+.cat{font:500 12px "JetBrains Mono",monospace;color:var(--ac2);text-transform:uppercase;letter-spacing:.5px}
+.card h3{font:600 20px "Space Grotesk",sans-serif;margin:6px 40px 0 0}
+.card p{color:var(--mu);font-size:15px;margin:10px 0}
+.card ul{padding-left:18px;color:var(--mu);font-size:14.5px}.card li{margin:5px 0}
+.card li::marker{color:var(--ac)}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.tag{background:var(--tag);color:var(--ac);border-radius:8px;padding:3px 10px;font:500 12px "JetBrains Mono",monospace}
+.flt{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.flt button{background:var(--card);border:1px solid var(--bd);color:var(--mu);border-radius:10px;padding:7px 16px;cursor:pointer;font:500 13px Inter,sans-serif}
+.flt button.on{background:var(--ac);border-color:var(--ac);color:#fff}
+.sk h4{font:600 15px "Space Grotesk",sans-serif;margin-bottom:12px}
+.tl{border-left:1px solid var(--bd);padding-left:26px}
+.it{position:relative;margin-bottom:32px}
+.it:before{content:"";position:absolute;left:-32px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--ac);box-shadow:0 0 0 4px var(--glow)}
+.dt{font:500 12px "JetBrains Mono",monospace;color:var(--ac2)}
+.it h3{font:600 19px "Space Grotesk",sans-serif}
+.it .org{color:var(--mu)}
+.it ul{color:var(--mu);padding-left:18px;margin-top:8px;font-size:15px}
+.cf{text-align:center}.cf .sub{margin-left:auto;margin-right:auto}.cf .cta{justify-content:center}
+.cbox{background:linear-gradient(160deg,var(--card),var(--bg2));border:1px solid var(--bd);border-radius:24px;padding:56px 24px}
+footer{padding:28px 0;text-align:center;color:var(--mu);font-size:13px;border-top:1px solid var(--bd)}
+.clk{cursor:pointer}.th{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top;border-radius:12px;border:1px solid var(--bd);margin-top:16px;display:block}.view{margin-top:14px;font:500 13px "JetBrains Mono",monospace;color:var(--ac2)}.mo{position:fixed;inset:0;z-index:20;background:rgba(3,6,12,.82);backdrop-filter:blur(6px);display:flex;align-items:flex-start;justify-content:center;padding:24px 16px;overflow:auto}.mb{position:relative;background:var(--card);border:1px solid var(--bd);border-radius:20px;padding:24px;width:min(1100px,100%);margin:auto}.mb h3{font:600 22px "Space Grotesk",sans-serif;margin-right:44px}.mb img{width:100%;border-radius:12px;border:1px solid var(--bd);margin-top:16px;display:block}.cap{color:var(--mu);font-size:14px;margin:12px 0}.mx{position:absolute;right:16px;top:14px;width:34px;height:34px;border-radius:50%;border:1px solid var(--bd);background:var(--bg2);color:var(--tx);cursor:pointer}.mb .flt{margin:16px 0 0}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const h = htm.bind(React.createElement);
+const { useState, useEffect } = React;
+
+const PROJECTS = [
+  { t:'Hybrid OCR Engine', c:'Deep Learning · OCR', k:'ocr',
+    d:'A multi-model OCR pipeline built to beat single-tool OCR on faded, handwritten and complex-layout scans.',
+    b:['Real-ESRGAN enhancement: pre-trained ESRGAN scored 8/10 vs 6–6.5/10 for OpenCV filters in my comparison','LayoutLMv3 for structure, CRAFT + DBNet for detection, TrOCR (Vision Transformer) with beam-search decoding','SymSpell + LanguageTool correction, ONNX optimisation, JSON output served via FastAPI + React'],
+    s:['PyTorch','Transformers','OpenCV','ONNX','FastAPI','React'], imgs:[["images/ocr-engine.webp", "AureXus OCR: upload a page, choose printed or handwritten mode and follow the processing pipeline.", "OCR engine"]] },
+  { t:'OCR Correction & Layout Detection App', c:'Computer Vision · YOLO', k:'cv',
+    d:'Detection and annotation tool that locates page structure so OCR errors can be reviewed and corrected fast.',
+    b:['DocLayout-YOLO detects and annotates tables and figures','Correction UI to compare OCR output against the source image','Python backend with a React front end'],
+    s:['DocLayout-YOLO','Python','PyTorch','FastAPI','React'], imgs:[["images/ocr-correction.webp", "Correction studio: word-level confidence (high, medium, low) with click-to-correct and PDF export.", "Correction UI"]] },
+  { t:'NER Extraction Application', c:'NLP · Information Extraction', k:'nlp',
+    d:'Pulls named entities out of document images by chaining OCR into an NLP pipeline.',
+    b:['Tesseract OCR turns images into text','spaCy NER identifies and structures entities','Automates data entry for cataloguing workflows'],
+    s:['Tesseract','spaCy','Python','NER'], imgs:[["images/ner-digitizer.webp", "Document digitizer: upload scans, review the OCR text for each document and open details for the extracted entities.", "Digitizer"]] },
+  { t:'Catalog Matching & QC System', c:'OCR · Matching · Full-stack', k:'ocr',
+    d:'Full-stack system that matches scanned books against a huge catalogue to cut manual validation effort.',
+    b:['12,000 scanned books matched against 637,860 records using OCR-extracted metadata','Exact and partial matching with relevance scoring surfaced ~2,700 potential matches','Ranked results so reviewers see the likeliest matches first'],
+    s:['Python','OCR','Elasticsearch','FastAPI','Node.js','React','SQL Server'], imgs:[["images/catalog-matching.webp", "Reviewers see the library record beside the matched catalogue records, with relevance scores and Select / Not a match / Doubt actions next to the scanned image.", "Matching UI"]] },
+  { t:'Diabetic Retinopathy Classification', c:'Deep Learning · Medical Imaging', k:'cv',
+    d:'Deep learning classifier for early detection of Diabetic Retinopathy from retinal images.',
+    b:['Hybrid VGG19 + Inception V3 + CNN architecture to reduce overfitting and strengthen feature learning','Designed to help detect microaneurysms and improve diagnostic reliability'],
+    s:['Python','CNN','VGG19','InceptionV3','Medical Imaging'], imgs:[["images/diabetic-retinopathy.webp", "Upload a retinal image and the model returns one stage (Normal, Moderate or Severe) with class probabilities. Illustrative demo screen.", "Classifier"]] }
+];
+
+const SKILLS = {
+  'AI / ML / DL':['Computer Vision','Deep Learning','NLP & NER','OCR','YOLO Detection','Image Processing'],
+  'Languages':['Python','SQL','Embedded C++'],
+  'Frameworks':['PyTorch','Transformers','OpenCV','spaCy','FastAPI','React'],
+  'Data & Deployment':['SQL Server','Elasticsearch','ONNX','Data Cleaning','Arduino / Raspberry Pi']
+};
+
+const Nav = ({ theme, setTheme }) => h`<nav><div class="w">
+  <a href="#top" class="logo">sangeetha<b>.</b>dev</a>
+  <div class="links"><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+  <button class="tg" aria-label="Toggle theme" onClick=${() => setTheme(theme === 'dark' ? 'light' : 'dark')}>${theme === 'dark' ? '☀ Light' : '☾ Dark'}</button></div>
+</div></nav>`;
+
+const Hero = () => h`<header class="hero" id="top"><div class="w">
+  <div>
+    <span class="badge"><i></i>AI Developer · Puducherry, India</span>
+    <h1>I build and ship <span>AI models, pipelines & APIs</span></h1>
+    <p class="lead">I’m Sangeetha, an AI Developer. I train and optimise computer vision and NLP models in PyTorch, then turn them into fast, deployable services with FastAPI.</p>
+    <div class="cta"><a class="btn p" href="#projects">View projects</a><a class="btn" href="#contact">Contact me</a></div>
+  </div>
+  <div class="code"><div class="bar"><i></i><i></i><i></i><span class="mono">pipeline.py</span></div>
+<pre><span class="k">from</span> torch <span class="k">import</span> nn
+<span class="c"># document-understanding pipeline</span>
+pipe = <span class="f">Pipeline</span>([
+  <span class="f">Enhance</span>(<span class="s">"Real-ESRGAN"</span>),
+  <span class="f">Layout</span>(<span class="s">"LayoutLMv3"</span>),
+  <span class="f">Detect</span>(<span class="s">"CRAFT+DBNet"</span>),
+  <span class="f">Recognize</span>(<span class="s">"TrOCR"</span>),
+  <span class="f">Export</span>(<span class="s">"ONNX"</span>),
+])
+<span class="k">@app</span>.post(<span class="s">"/predict"</span>)
+<span class="k">async def</span> <span class="f">predict</span>(img): <span class="k">return</span> pipe(img)</pre></div>
+</div>
+<div class="w"><div class="stats" style=${{gridColumn:'1/-1'}}>
+  <div class="st"><b>6M+</b><small>records processed by a fault-tolerant Python pipeline</small></div>
+  <div class="st"><b>637,860</b><small>records searched by my matching system</small></div>
+  <div class="st"><b>5+</b><small>deployed AI / ML / DL applications</small></div>
+  <div class="st"><b>8.99</b><small>CGPA · B.Tech AI & Data Science</small></div>
+</div></div></header>`;
+
+const Skills = () => h`<section id="skills"><div class="w"><div class="eyebrow">// stack</div><h2>Skills</h2><p class="sub">The tools I use to take models from notebook to production.</p>
+  <div class="grid g2">${Object.entries(SKILLS).map(([k, v]) => h`<div class="card sk" key=${k}><h4>${k}</h4><div class="tags" style=${{marginTop:0}}>${v.map(x => h`<span class="tag" key=${x}>${x}</span>`)}</div></div>`)}</div></div></section>`;
+
+function Modal({ p, onClose }) {
+  const [i, setI] = useState(0);
+  useEffect(() => { setI(0); }, [p]);
+  useEffect(() => { if (!p) return; const k = e => { if (e.key === 'Escape') onClose(); }; document.addEventListener('keydown', k); document.body.style.overflow = 'hidden'; return () => { document.removeEventListener('keydown', k); document.body.style.overflow = ''; }; }, [p]);
+  if (!p) return null;
+  const m = p.imgs[Math.min(i, p.imgs.length - 1)];
+  return h`<div class="mo" onClick=${onClose}><div class="mb" onClick=${e => e.stopPropagation()}>
+    <button class="mx" aria-label="Close" onClick=${onClose}>✕</button>
+    <div class="cat">${p.c}</div><h3>${p.t}</h3>
+    ${p.imgs.length > 1 && h`<div class="flt">${p.imgs.map((x, j) => h`<button key=${x[0]} class=${j === i ? 'on' : ''} onClick=${() => setI(j)}>${x[2]}</button>`)}</div>`}
+    <img src=${m[0]} alt=${m[1]}/><p class="cap">${m[1]}</p>
+  </div></div>`;
+}
+
+function Projects() {
+  const [f, setF] = useState('all');
+  const [open, setOpen] = useState(null);
+  const F = [['all','All'],['ocr','OCR'],['cv','Computer Vision'],['nlp','NLP']];
+  const list = PROJECTS.filter(p => f === 'all' || p.k === f);
+  return h`<section id="projects"><div class="w"><div class="eyebrow">// work</div><h2>Featured projects</h2><p class="sub">AI, ML and deep learning systems built in Python.</p>
+    <div class="flt">${F.map(([k, l]) => h`<button key=${k} class=${f === k ? 'on' : ''} onClick=${() => setF(k)}>${l}</button>`)}</div>
+    <div class="grid g2">${list.map(p => h`<article class="card clk" key=${p.t} tabindex="0" onClick=${() => setOpen(p)} onKeyDown=${e => { if (e.key === 'Enter') setOpen(p); }}><div class="num">${String(PROJECTS.indexOf(p) + 1).padStart(2, '0')}</div>
+      <div class="cat">${p.c}</div><h3>${p.t}</h3><p>${p.d}</p>
+      <ul>${p.b.map(x => h`<li key=${x}>${x}</li>`)}</ul>
+      ${p.imgs && h`<img class="th" src=${p.imgs[0][0]} alt=${p.t} loading="lazy"/>`}
+      <div class="tags">${p.s.map(x => h`<span class="tag" key=${x}>${x}</span>`)}</div>${p.imgs && h`<div class="view">▶ View project screens</div>`}</article>`)}</div><${Modal} p=${open} onClose=${() => setOpen(null)}/></div></section>`;
+}
+
+const Experience = () => {
+  const E = [
+    ['AI Developer (Junior AI Solutions Assistant)','Pixirus Content & Services LLP','Apr 2026 – Present',['Build and optimise ML pipelines for performance, scalability and production deployment','R&D in OCR, document layout analysis, NER, OCR correction and automated data extraction','Integrated AI solutions for automated cataloguing and time tracking with cross-functional teams']],
+    ['Embedded Programmer & Robotics Trainer','Smart Robo Coderz LLP','Jul 2025 – Mar 2026',['Programmed embedded, robotic and IoT systems with Arduino, Raspberry Pi and ESP8266','Built vision-assisted rover robots with OpenCV and Python–Arduino serial control','Trained school and college students in robotics and STEM']]
+  ];
+  return h`<section id="experience"><div class="w"><div class="eyebrow">// journey</div><h2>Experience & education</h2><p class="sub">Where I’ve built and learned.</p>
+  <div class="tl">${E.map(e => h`<div class="it" key=${e[0]}><div class="dt">${e[2]}</div><h3>${e[0]}</h3><div class="org">${e[1]}</div><ul>${e[3].map(x => h`<li key=${x}>${x}</li>`)}</ul></div>`)}
+  <div class="it"><div class="dt">2021 – 2025</div><h3>B.Tech, Artificial Intelligence & Data Science</h3><div class="org">Anna University, Villupuram · CGPA 8.99</div></div></div>
+  <div class="tags"><span class="tag">NPTEL · Intro to Machine Learning (Elite)</span><span class="tag">Cisco · IoT Fundamentals & Security</span><span class="tag">GUVI · AI for Women</span></div></div></section>`;
+};
+
+const Contact = () => h`<section id="contact" class="cf"><div class="w"><div class="cbox"><div class="eyebrow">// contact</div><h2>Let’s build something with AI</h2><p class="sub">Open to AI developer roles and collaborations.</p>
+  <div class="cta"><a class="btn p" href="mailto:sangeethads08@gmail.com">sangeethads08@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/sangeetha1903" target="_blank" rel="noopener">LinkedIn</a></div></div></div></section>`;
+
+function App() {
+  const [theme, setTheme] = useState(() => { try { return localStorage.getItem('theme') || 'dark'; } catch (e) { return 'dark'; } });
+  useEffect(() => { document.documentElement.setAttribute('data-theme', theme); try { localStorage.setItem('theme', theme); } catch (e) {} }, [theme]);
+  return h`<${React.Fragment}><${Nav} theme=${theme} setTheme=${setTheme}/><${Hero}/><${Skills}/><${Projects}/><${Experience}/><${Contact}/><footer>© 2026 Sangeetha S · AI Developer</footer><//>`;
+}
+ReactDOM.createRoot(document.getElementById('root')).render(h`<${App}/>`);
+</script>
+</body>
+</html>
